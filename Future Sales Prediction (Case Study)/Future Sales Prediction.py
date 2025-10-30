@@ -32,7 +32,7 @@ xtrain, xtest, ytrain, ytest = train_test_split(x, y,
                                                 random_state=42)
 
 
-
+#线性回归
 model = LinearRegression()
 model.fit(xtrain, ytrain)
 print(model.score(xtest, ytest))

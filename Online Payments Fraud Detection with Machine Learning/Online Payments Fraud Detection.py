@@ -46,7 +46,7 @@ from sklearn.model_selection import train_test_split
 x = np.array(data[["type", "amount", "oldbalanceOrg", "newbalanceOrig"]])
 y = np.array(data[["isFraud"]])
 
-# 训练机器学习模型
+# 训练机器学习模型   决策树回归器
 from sklearn.tree import DecisionTreeClassifier
 xtrain, xtest, ytrain, ytest = train_test_split(x, y, test_size=0.10, random_state=42)
 model = DecisionTreeClassifier()
